@@ -8,15 +8,15 @@ while True :
     s = int(s)
 
     if( s == 1 ):
-        proc = subprocess.Popen("sudo omxplayer ~/test/sound/Init.wav", stdout = subprocess.PIPE, shell = True)
+        proc = subprocess.Popen("sudo omxplayer /home/pi/broadcast/soundfile/Init.wav", stdout = subprocess.PIPE, shell = True)
         time.sleep(2)
 
     elif( s == 2):
-        proc = subprocess.Popen("sudo omxplayer ~/test/sound/grabSteer.wav", stdout = subprocess.PIPE, shell = True)
+        proc = subprocess.Popen("sudo omxplayer /home/pi/broadcast/soundfile/grabSteer.wav", stdout = subprocess.PIPE, shell = True)
         time.sleep(2)
 
     elif( s == 3) :
-        proc = subprocess.Popen("sudo omxplayer ~/test/sound/disengaged.wav", stdout = subprocess.PIPE, shell = True)
+        proc = subprocess.Popen("sudo omxplayer /home/pi/broadcast/soundfile/disengaged.wav", stdout = subprocess.PIPE, shell = True)
         time.sleep(2)
     else : 
         print("fail")
