@@ -2,6 +2,7 @@ import os
 import subprocess
 import time
 
+music_path = "/home/pi/broadcast/soundfile/"
 
 while True :
     s = raw_input()
